@@ -1,0 +1,6 @@
+README.md
+setup.py
+basic_ems.egg-info/PKG-INFO
+basic_ems.egg-info/SOURCES.txt
+basic_ems.egg-info/dependency_links.txt
+basic_ems.egg-info/top_level.txt

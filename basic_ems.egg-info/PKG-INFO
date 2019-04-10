@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: basic-ems
+Version: 0.1
+Summary: A simple EMS based on rules
+Home-page: https://github.com/cycle-system/simple_ems
+Author: Cycle
+Author-email: ml@cyclesystem.org
+License: UNKNOWN
+Description: # Simple EMS Package
+        
+        Using an estimator for SoC (state of charge), Max Power of Charge and Max Power of Discharge we estimate
+        a setpoint for operate flow of power.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
