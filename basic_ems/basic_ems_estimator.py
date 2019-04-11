@@ -521,7 +521,6 @@ class basicEmsEstimator(BaseEstimator, RegressorMixin):
     Parameters
     ----------
     p_soc : socParams, default='None' - Description to write
-    p_bat : batteryParams, default='None' - Description to write
     states_in : list, default='None' - Description to write
     rxx_in : list, default='None' - Description to write
     e_acum_in = float, default='None' - Description to write
@@ -536,7 +535,7 @@ class basicEmsEstimator(BaseEstimator, RegressorMixin):
     f : int, default='None' - Description to write
     """
     
-    def __init__(self,p_soc = None, p_bat = None, states_in = np.array([0.2,1,1]),
+    def __init__(self,p_soc = None, states_in = np.array([0.2,1,1]),
                  rxx_in = np.diag(np.array([1.2e-15, 1.2e-10, 1.2e-10])),
                  e_acum_in = 0, soc_max = 0.8, soc_min = 0.2, t_sampling = 60,
                  c_n = 0, i_max = 0, v_max = 0, v_min = 0, p_max = 0, f = 0):
