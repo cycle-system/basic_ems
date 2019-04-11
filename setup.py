@@ -16,7 +16,7 @@ setuptools.setup(
     install_requires=[
           'numpy',
 	  'scipy',
-	  'sklearn'	
+	  'scikit-learn==0.19'	
       ],
     classifiers=[
         "Programming Language :: Python :: 3",
