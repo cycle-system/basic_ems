@@ -31,7 +31,7 @@ import inspect
 # Observation equation
 #  Voltage            =  Voc (Soc)  +  sig*R-*I  +   (1-sig)*R+*I;
 
-def socEstimation(p_soc,v_bat,i_prev,i_now,t_sampling,e_acum_in,states_in,rxx_in,f) :
+def socEstimation(p_soc,v_bat,i_prev,i_now,t_sampling,e_acum_in,states_in,rxx_in,c_n,f) :
     
     # Initialization
     
@@ -591,7 +591,7 @@ class basicEmsEstimator(BaseEstimator, RegressorMixin):
     """  
     
     def __computeSocEstimation(self,v_bat,i_prev,i_now) : 
-        return socEstimation(self.p_soc,v_bat,i_prev,i_now,self.t_sampling,self.e_acum_in,self.states_in,self.rxx_in,self.f);
+        return socEstimation(self.p_soc,v_bat,i_prev,i_now,self.t_sampling,self.e_acum_in,self.states_in,self.rxx_in,self.c_n,self.f);
     
     def __computeMaximumPower(self): 
         return getMaximumPower(self.states_in,self.soc_max,self.soc_min,self.c_n,self.i_max,self.v_max,self.v_min,self.p_max,self.f);
