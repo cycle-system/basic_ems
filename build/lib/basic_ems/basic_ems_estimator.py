@@ -18,6 +18,124 @@ from sklearn.utils.multiclass import unique_labels
 from sklearn.metrics import euclidean_distances
 import inspect
 
+# Parameters that should be tuneable to configure the SoC
+
+class socParams: 
+    
+    def __init__(self, e_th, p1, p2, q1, q2, alpha, kappa, beta, lambd, gamma, wc, wm, rww, rvv, n):
+        
+        self._e_th = e_th;
+        self._p1 = p1;
+        self._p2 = p2;
+        self._q1 = q1;
+        self._q2 = q2;
+        self._alpha = alpha;
+        self._kappa = kappa;
+        self._beta = beta;
+        self._lambd = lambd;
+        self._gamma = gamma;
+        self._wc = wc;
+        self._wm = wm;
+        self._rww = rww;
+        self._rvv = rvv;
+        self._n = n;
+    
+    # getter method 
+    
+    @property
+    def e_th(self):
+        return self._e_th;
+    @property
+    def p1(self):
+        return self._p1;
+    @property
+    def p2(self):
+        return self._p2;
+    @property
+    def q1(self):
+        return self._q1;
+    @property
+    def q2(self):
+        return self._q2;
+    @property
+    def alpha(self): 
+        return self._alpha;
+    @property
+    def kappa(self):
+        return self._kappa;
+    @property
+    def beta(self):
+        return self._beta;
+    @property
+    def lambd(self):
+        return self._lambd;
+    @property
+    def gamma(self):
+        return self._gamma;
+    @property
+    def wc(self):
+        return self._wc;
+    @property
+    def wm(self):
+        return self._wm;
+    @property
+    def rww(self):
+        return self._rww;
+    @property
+    def rvv(self):
+        return self._rvv;
+    @property
+    def n(self):
+        return self._n;
+    
+    # setter method 
+    
+    @e_th.setter 
+    def e_th(self, x):
+        self._e_th = x;
+    @p1.setter
+    def p1(self, x):
+        self._p1 = x
+    @p2.setter
+    def p2(self, x):
+        self._p2 = x;
+    @q1.setter
+    def q1(self, x):
+        self._q1 = x;
+    @q2.setter
+    def q2(self, x):
+        self._q2 = x;
+    @alpha.setter
+    def alpha(self, x): 
+        self._alpha = x;
+    @kappa.setter
+    def kappa(self, x):
+        self._kappa = x;
+    @beta.setter
+    def beta(self, x):
+        self._beta = x;
+    @lambd.setter
+    def lambd(self, x):
+        self._lambd = x;
+    @gamma.setter
+    def gamma(self, x):
+        self._gamma = x;
+    @wc.setter
+    def wc(self, x):
+        self._wc = x;
+    @wm.setter
+    def wm(self, x):
+        self._wm = x;
+    @rww.setter
+    def rww(self, x):
+        self._rww = x;
+    @rvv.setter
+    def rvv(self, x):
+        self._rvv = x;
+    @n.setter
+    def n(self, x):
+        self._n = x;
+
 # Method for implementation of the UKF estimator based on simple model for the batetry bank
 
 # Negative Current is for Discharging
