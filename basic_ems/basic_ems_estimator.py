@@ -6,10 +6,8 @@ Module that condense all the components of the EMS tested above
 
 import numpy as np
 import numpy.matlib as matlib
-import pdb
 from math import *
 from decimal import *
-from matplotlib import pyplot as plt
 from scipy import linalg
 
 # Sklearn imports

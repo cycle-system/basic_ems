@@ -1,9 +1,9 @@
 Metadata-Version: 2.1
 Name: basic-ems
-Version: 0.1
+Version: 0.0.1
 Summary: A simple EMS based on rules
 Home-page: https://github.com/cycle-system/simple_ems
-Author: Cycle
+Author: Cycle ML Team
 Author-email: ml@cyclesystem.org
 License: UNKNOWN
 Description: # Simple EMS Package
