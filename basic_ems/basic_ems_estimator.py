@@ -12,7 +12,7 @@ from scipy import linalg
 
 # Sklearn imports
 
-from sklearn.base import BaseEstimator, RegressorMixin
+from sklearn.base import BaseEstimator
 from sklearn.utils.validation import check_X_y, check_array, check_is_fitted
 from sklearn.utils.multiclass import unique_labels
 from sklearn.metrics import euclidean_distances
@@ -511,7 +511,7 @@ def getBatteryPowerReference(p_pv,p_load,p_grid,soc,soc_max,soc_min,p_max_ch,p_m
             
     return pb_ref;
 
-class basicEmsEstimator(BaseEstimator, RegressorMixin):
+class basicEmsEstimator(BaseEstimator):
     
     """ 
     A estimator based on rules wich contains the EMS configurations
