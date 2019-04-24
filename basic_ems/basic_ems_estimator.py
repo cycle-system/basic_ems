@@ -511,6 +511,16 @@ def getBatteryPowerReference(p_pv,p_load,p_grid,soc,soc_max,soc_min,p_max_ch,p_m
             
     return pb_ref;
 
+"""
+Module that condense all the components of the EMS tested above
+"""
+
+from sklearn.base import BaseEstimator
+from sklearn.utils.validation import check_X_y, check_array, check_is_fitted
+from sklearn.utils.multiclass import unique_labels
+from sklearn.metrics import euclidean_distances
+import inspect
+
 class basicEmsEstimator(BaseEstimator):
     
     """ 
@@ -684,7 +694,7 @@ class basicEmsEstimator(BaseEstimator):
             
             # Append results to output vector
             
-	    y_reg.append(np.float64(states_out[0]));
+            y_reg.append(np.float64(states_out[0]));
             y_reg.append(np.float64(states_out[1]));
             y_reg.append(np.float64(states_out[2]));
             y_reg.append(np.float64(err));
