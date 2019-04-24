@@ -370,7 +370,7 @@ def socEstimation(p_soc,v_bat,i_prev,i_now,t_sampling,e_acum_in,states_in,rxx_in
     
     states_out = x_med[1];
     rxx_out = rxx[1];
-    err = e; 
+    err = e[0]; 
     e_acum_out = e_acum;
     
     # Return the updated states
