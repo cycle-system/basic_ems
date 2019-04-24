@@ -684,14 +684,14 @@ class basicEmsEstimator(BaseEstimator):
             
             # Append results to output vector
             
-            y_reg.append(states_out[0]);
-            y_reg.append(states_out[1]);
-            y_reg.append(states_out[2]);
-            y_reg.append(err);
-            y_reg.append(e_acum_out);
-            y_reg.append(p_max_ch);
-            y_reg.append(p_max_dis);
-            y_reg.append(p_b_ref);
+	    y_reg.append(np.float64(states_out[0]));
+            y_reg.append(np.float64(states_out[1]));
+            y_reg.append(np.float64(states_out[2]));
+            y_reg.append(np.float64(err));
+            y_reg.append(np.float64(e_acum_out));
+            y_reg.append(np.float64(p_max_ch));
+            y_reg.append(np.float64(p_max_dis));
+            y_reg.append(np.float64(p_b_ref));
             
             # Append sub result to output vector
             
